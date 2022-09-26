@@ -15,7 +15,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: 'Lora', serif;
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -26,7 +26,8 @@ LAYOUT
 ====================*/
 
 .container {
-    width: 90%;
+    width: 95%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -78,7 +79,7 @@ header
 .header__link {
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.175em;
     color: var(--nav-color);
 
 }
@@ -87,6 +88,33 @@ header
     border-bottom: 2px solid var(--nav-color);
     
 } 
+
+
+@media (min-width: 890px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        /* background-color: magenta; */
+        padding: 2em;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__col-1 {
+        margin: 0;
+    }
+
+    .header__item {
+        margin: 0 0 0 2.5em;
+    }
+}
+
 
 /* ==================
 MAIN
