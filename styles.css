@@ -3,11 +3,21 @@ GLOBAL
 =====================*/
 
 :root {
-    --color-1: #F8F8F8;
+    --color-1: orange;
+    --color-2: #F8F8F8;
+    --nav-color: #717171;
+    --title-color: #143774;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -26,8 +36,10 @@ LAYOUT
 TYPOGRAPHY
 ==================*/
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    color: var(--title-color);
+    margin: 0;
 }
 
 
@@ -37,10 +49,44 @@ header
 =====================*/
 
 .header {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
+    padding: 1.2em;
+    text-align: center;
+}
+
+.header__sub-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__col-1 {
+    margin-bottom: 1.75em;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__item {
+    margin-bottom: 1em;
+}
+
+.header__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--nav-color);
 
 }
 
+.header__link--active {
+    border-bottom: 2px solid var(--nav-color);
+    
+} 
 
 /* ==================
 MAIN
