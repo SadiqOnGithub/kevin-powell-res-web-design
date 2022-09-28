@@ -79,7 +79,7 @@ header
 =====================*/
 
 .header {
-    background-color: var(--color-2);
+    background-color: var(--aside-border);
     padding: 2.75em  0 1.75em;
     margin-bottom: 5em;
     text-align: center;
@@ -152,7 +152,7 @@ MAIN
 .article {
     /* background-color: mediumseagreen; */
     display: flex;
-    border-bottom: 1.5px solid #707070;
+    border-bottom: 1.5px solid #707070;    
     padding-bottom: 1.75em;
 
 }
@@ -223,7 +223,7 @@ strong {
 @media (min-width: 750px) {
     .article {
         border-left: 2px solid var(--font-color);
-        padding: 0 0 0 1em;
+        padding: 0 0 0 0.6em;
     }
     .article {
         border-bottom: none;
@@ -244,8 +244,8 @@ ASIDE
 =====================*/
 
 .about, .recent {
-    border: 20px solid var(--aside-border);
-    padding: 1.5em;
+    border: 1em solid var(--aside-border);
+    padding: 1.5em 0.75em;
     margin-bottom: 3em;
 }
 
@@ -306,7 +306,7 @@ ASIDE
         justify-content: space-between;
     }
     .main {
-        width: 65%;
+        width: 66%;
     }
 
     .aside {
@@ -333,4 +333,44 @@ FOOTER
 
 .footer__sub-title {
     margin: 0 auto;
+}
+
+
+/* ==================
+recent posts
+=====================*/
+
+.RP_article:nth-last-child(4) .article__img {
+    object-position: 74% 90%;
+}
+
+
+@media (min-width: 750px) {
+    
+    .RP_article {
+        /* background-color: magenta; */
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* padding: 0 0 0 0.6em; */
+    }
+
+    .RP_article__col-1 {
+        max-width: 65%;
+    }
+    .RP_article__col-2 {
+        max-width: 32.5%;
+    }
+
+    .RP_article__caption {
+        margin-bottom: 0px;
+    }
+
+    .RP_article:nth-last-child(4) .article__img {
+        object-position: 74% 50%;
+    }
+
+    .RP_article:nth-last-child(1) .article__img {
+        object-position: 10% 50%;
+    }
 }
